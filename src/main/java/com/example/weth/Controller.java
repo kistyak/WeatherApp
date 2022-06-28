@@ -20,6 +20,30 @@ public class Controller {
     private URL location;
 
     @FXML
+    private Button buttonBerlin;
+
+    @FXML
+    private Button buttonDuisburg;
+
+    @FXML
+    private Button buttonKiev;
+
+    @FXML
+    private Button buttonLosAngeles;
+
+    @FXML
+    private Button buttonNewYork;
+
+    @FXML
+    private Button buttonPraha;
+
+    @FXML
+    private Button buttonToronto;
+
+    @FXML
+    private Button buttonWarszawa;
+
+    @FXML
     private Button button_check;
 
     @FXML
@@ -37,6 +61,62 @@ public class Controller {
                   JSONObject obj = new JSONObject(output);
                     temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
                 }
+            }
+        });
+        buttonKiev.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=Kiev&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
+            }
+        });
+        buttonWarszawa.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=Warszawa&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
+            }
+        });
+        buttonPraha.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=Praha&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
+            }
+        });
+        buttonBerlin.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
+            }
+        });
+        buttonDuisburg.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=Duisburg&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
+            }
+        });
+        buttonNewYork.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=New York&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
+            }
+        });
+        buttonLosAngeles.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=Los Angeles&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
+            }
+        });
+        buttonToronto.setOnAction(event -> {
+            String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=9216b7139d09d067bd79fa033a895148&units=metric");
+            if (!output.isEmpty()) {
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Temperature: " + obj.getJSONObject("main").getDouble("temp"));
             }
         });
     }

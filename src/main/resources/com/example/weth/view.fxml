@@ -6,8 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #345948;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weth.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #345948;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weth.Controller">
    <children>
       <AnchorPane prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #15261E;">
          <children>
@@ -23,11 +22,54 @@
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </TextField>
-      <Button fx:id="button_check" layoutX="85.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Check" />
+      <Button fx:id="button_check" layoutX="45.0" layoutY="126.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Check" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
       <Text fx:id="temperature" fill="#bf8f73" layoutX="45.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature:">
          <font>
             <Font name="Calibri Bold" size="24.0" />
          </font>
       </Text>
+      <Button fx:id="buttonKiev" layoutX="45.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Kiev" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonPraha" layoutX="45.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Praha" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDuisburg" layoutX="45.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Duisburg" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonLosAngeles" layoutX="45.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Los Angeles" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonWarszawa" layoutX="163.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Warszawa" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonBerlin" layoutX="163.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Berlin" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonNewYork" layoutX="163.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="New York" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonToronto" layoutX="163.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #345948; -fx-border-color: silver; -fx-border-radius: 10;" text="Toronto" textFill="#bf8f73">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
